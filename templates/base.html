@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protecto Shop inventory</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/buttons.css') }}">
+    <lin rel="stylesheet" href="{{ url_for('static', filename='css/forms.css') }}">
+    <lin rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <lin rel="stylesheet" href="{{ url_for('static', filename='css/tables.css') }}">
+        
+</head>
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/products">Products</a>
+                    <li>
+                    </li>
+                    <a href="/manufacturers">Manufacturers</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="content">
+            {% block content %}
+
+           {% endblock %}
+
+        </section>
+    </main>
+</body>
+</html>
