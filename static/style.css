@@ -1,27 +1,53 @@
-body {
+body{
     background: url('/static/images/background.png');
+    display: flexbox;
     background-size: cover;
-    background-repeat: no-repeat;
-    color: green;
+    background-repeat: repeat;
+    color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: x-large;
+}
 
+h1 {
+  display: inline-flexbox;
+  color: white;
+  border: 5px;
+  border-color:rgb(7, 92, 95);
+  border-style: solid;
+  border-width: initial;
+  outline-color: tomato;
+  text-shadow: rgb(5, 22, 22); backdrop-filter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 120px;
+  
 }
 
 .title {
     color: ivory;
     text-shadow: lemonchiffon;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 
 
 .flex {
     display: flex;
+    background-origin: padding-box;
+    color: darkblue;
+    text-decoration-color: rgb(7, 92, 95);
+    text-emphasis-color: red;
+    font-size: xx-large ; 
+    justify-content:center;
+    padding-inline: 50px ;
+
   }
   
   .flex--row {
     flex-direction: row;
+    color: darkblue;
+    text-decoration-color: rgb(7, 92, 95);
+    text-emphasis-color: red;
+    font-size: xx-large ; 
+    justify-content:center;
   }
 
 

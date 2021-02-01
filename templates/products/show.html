@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div>
+    <hr>
+    <p>Name: {{product.name}}</p>
+    <p>Manufacturer: {{product.manufacturer.name}}</p>
+    <p>Description:{{product.description}}</p>
+    <p>Quanitity in stock: {{product.quantity_in_stock}}</p>
+    <p>Cost to Purchase: {{product.cost_to_purchased}}</p>
+    <p>Selling Price: {{product.selling_price}}</p>
+    <p><a href="/products/{{product.id}}/edit">Edit</a></p>
+  </div>
+
+{% endblock %}

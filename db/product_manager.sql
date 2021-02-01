@@ -15,5 +15,5 @@ CREATE TABLE products (
     quantity_in_stock INT,
     cost_to_purchase DECIMAL,
     selling_price DECIMAL,
-    manufacturer_id INT REFERENCES manufacturers(id)
+    manufacturer_id INT REFERENCES manufacturers(id) ON DELETE CASCADE,
 );

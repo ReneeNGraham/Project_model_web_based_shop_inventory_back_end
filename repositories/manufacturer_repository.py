@@ -42,6 +42,24 @@ def delete(id):
     values = [id]
     run_sql(sql, values)
 
+def update(manufacturer):
+    sql = "UPDATE manufacturers SET (name, description) = (%s, %s) WHERE id = %s"
+    values = [manufacturer.name, manufacturer.descprition, manufacturer.id]
+    run_sql(sql, values)
+
+def products(manufacturer):
+    products = []
+
+    sql = "SELECT * FROM products WHERE manufacturer_id = %s"
+    values = [manufacturer.id]
+    results = run_sql (sql, values)
+
+    for row in results: 
+        product = Product(row['name'], row['manufacturer_id'], row['description'], row['quantity_in_stock'], row['cost_to_purchase'], row['selling_price'], row['id'])
+        products.append(product)
+    return products 
+
+
 
 
 

@@ -1,0 +1,35 @@
+
+.content-table {
+    border-style: solid;
+    border: 2px solid black;
+    margin: 50px 0;
+    font-size: 20px;
+    min-width: 600px;
+    padding-left: 20px;
+    text-align: left;
+
+}
+
+.content-table thead tr {
+    background-color: #009879 ;
+    color: #ffffff;
+    text-align: left;
+}
+
+
+.manufacturer-table {
+
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 600px;
+    padding-left: 20px;
+    border: 6px solid black;
+
+}
+
+.manufacturer-table thead tr {
+    background-color: #009879 ;
+    color: #ffffff;
+    text-align: left;
+
+}
