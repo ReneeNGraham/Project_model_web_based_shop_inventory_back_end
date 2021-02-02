@@ -54,6 +54,7 @@ def update_product(id):
     quantity_in_stock = request.form['quantity_in_stock']
     cost_to_purchase  = request.form['cost_to_purchase']
     selling_price     = request.form['selling_price']
+    print(manufacturer_id)
     manufacturer      = manufacturer_repository.select(manufacturer_id)
     product           = Product(name, manufacturer, description, quantity_in_stock, cost_to_purchase, selling_price, id)
     product_repository.update(product)
