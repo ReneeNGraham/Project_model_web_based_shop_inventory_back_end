@@ -4,7 +4,6 @@
     justify-content: center;
     border:2;
     border-color: black;
-    width: auto;
     background-color:teal;
     color: white;
     padding: 1rem;
@@ -13,12 +12,29 @@
     margin:1rem;
     text-transform:uppercase;
     vertical-align: center;
+    margin-top: 10px;
+    margin-left: 2px;
     position: relative;
-    right:40px;
     top: 10px;
-    left: 830px;
+    left: 1150px;
     }
 
+@media (max-width: 350px){
+        .addbutton{
+          font-size: 15px;
+          font-family: "Helvetica neue";
+         
+        }
+    }
+      
+@media (max-width: 767px){
+        .addbutton{
+        font-size: 15px;
+          font-family: "Helvetica neue";
+         
+    }
+}
+    
 .manbutton {
     display:grid;
     justify-content: center;
@@ -38,6 +54,20 @@
     position: relative;
     top: 10px;
     left: 80px;
-
   }
 
+@media (max-width: 350px){
+    .manbutton{
+      font-size: 15px;
+      font-family: "Helvetica neue";
+     
+    }
+}
+  
+@media (max-width: 767px){
+    .manbutton{
+    font-size: 15px;
+      font-family: "Helvetica neue";
+     
+}
+}

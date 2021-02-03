@@ -1,5 +1,5 @@
 .man_form{
-    
+
     max-width: 500px;
     font-size: 30px;
     font-family: 'Ubuntu';
@@ -9,17 +9,47 @@
     background-color: white;
     padding: 50px;
 }
-
+@media (max-width: 350px){
+    .man_form{
+      font-size: 20px;
+      font-family: "Helvetica neue";
+      text-shadow: 0px 0px black ;
+    }
+  }
+  
+  @media (max-width: 767px){
+    .man_form{
+        font-size: 20px;
+      font-family: "Helvetica neue";
+      text-shadow: 0px 0px black ;
+    }
+   }
+  
 .prod_form{
-    max-width: 400px;
+    max-width: 500px;
     font-size: 30px;
     font-family: 'Ubuntu';
-    margin:1rem auto;
+    margin:2rem auto;
     border: solid;
     border-color: rgb(12, 22, 22);
     background-color: white;
-    padding: 20px;
+    padding: 50px;
 }
+@media (max-width: 350px){
+    .prod_form{
+      font-size: 20px;
+      font-family: "Helvetica neue";
+      text-shadow: 0px 0px black ;
+    }
+  }
+  
+  @media (max-width: 767px){
+    .prod_form{
+        font-size: 20px;
+      font-family: "Helvetica neue";
+      text-shadow: 0px 0px black ;
+    }
+   }
 
 label{
  display:block;
@@ -42,12 +72,29 @@ font-family: 'Ubuntu';
     max-width: 400px;
     font-size: 30px;
     font-family: 'Ubuntu';
-    margin:1rem auto;
+    margin:2rem auto;
     border: solid;
     border-color: rgb(12, 22, 22);
     background-color: white;
     padding: 20px;
 }
+
+@media (max-width: 350px){
+    .updateform{
+      font-size: 15px;
+      font-family: "Helvetica neue";
+      text-shadow: 0px 0px black ;
+    }
+  }
+  
+  @media (max-width: 767px){
+    .updateform{
+        font-size: 15px;
+      font-family: "Helvetica neue";
+      text-shadow: 0px 0px black ;
+    }
+   }
+
 
 .manupdate{
 
@@ -61,7 +108,26 @@ font-family: 'Ubuntu';
     padding: 50px;
 
 }
+@media (max-width: 350px){
+    .manupdate{
+      font-size: 15px;
+      font-family: "Helvetica neue";
+      text-shadow: 0px 0px black ;
+    }
+  }
+  
+  @media (max-width: 767px){
+    .manupdate{
+        font-size: 15px;
+      font-family: "Helvetica neue";
+      text-shadow: 0px 0px black ;
+    }
+   }
 
 
 
-
+#dropdown{
+        font-size: 30px;
+        border-radius:30px;
+        background-color: turquoise;
+}
