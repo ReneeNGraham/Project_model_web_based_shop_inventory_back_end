@@ -1,15 +1,33 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div>
-    <hr>
-    <p>Name: {{product.name}}</p>
-    <p>Manufacturer: {{product.manufacturer.name}}</p>
-    <p>Description:{{product.description}}</p>
-    <p>Quanitity in stock: {{product.quantity_in_stock}}</p>
-    <p>Cost to Purchase: {{product.cost_to_purchased}}</p>
-    <p>Selling Price: {{product.selling_price}}</p>
-    <p><a href="/products/{{product.id}}/edit">Edit</a></p>
+  <div class="showproduct">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Manufacturer</th>
+                <th>Description</th>
+                <th>Quantity in Stock</th>
+                <th>Cost to Purchase</th>         
+                <th>Selling Price</th>
+                <th>Mark up</th>            
+        
+            </tr>
+       </thead>
+            <tr>
+                <td>{{product.name}}</td>
+                <td>{{product.manufacturer.name}}</td>
+                 <td>{{product.description}}</td>
+                 <td>{{product.quantity_in_stock }}</td>
+                 <td>{{product.cost_to_purchase}}</td>
+                 <td>{{product.selling_price }}</td>
+                 <td> {{(product.selling_price - product.cost_to_purchase)/product.cost_to_purchase}}</td>
+             </tr>
+      </table>
+      <p><a href="/products/{{product.id}}/edit">Edit</a></p>
+
   </div>
 
 {% endblock %}
+

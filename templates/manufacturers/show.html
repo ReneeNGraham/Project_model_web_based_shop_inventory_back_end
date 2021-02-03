@@ -1,12 +1,21 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div>
-    <hr>
-    <p>Name: {{manufacturer.name}}</p>
-    <p>Description:  {{manufacturer.description}}</p>
-    <p><a href="/manufacturers/{{manufacturer.id}}/edit">Edit</a></p>
-
-  </div>
+<div class ="manufacturer-table">
+   <hr> MANUFACTURER <hr>
+    <table>
+        <thead>
+             <tr>
+                <th>Name</th>
+                <th>Description</th>
+             </tr>
+         </thead>
+            <tr>
+               <td>{{manufacturer.name}}</td>
+               <td>{{manufacturer.description}}</td>
+          </tr>
+   </table>
+   <p><a href="/manufacturers/{{manufacturer.id}}/edit">Edit</a></p>
+</div>
 
 {% endblock %}

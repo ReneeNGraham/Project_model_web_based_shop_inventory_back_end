@@ -1,12 +1,18 @@
 
 .content-table {
     border-style: solid;
+    background-color: rgb(255, 250, 250);
     border: 2px solid black;
+    font-family: 'Ubuntu';
+    table-layout: auto;
     margin: 50px 0;
-    font-size: 20px;
+    margin-left: 50px;
+    font-size: 30px;
+    margin: top right bottom left;
     min-width: 600px;
     padding-left: 20px;
     text-align: left;
+    justify-content: center;
 
 }
 
@@ -14,14 +20,42 @@
     background-color: #009879 ;
     color: #ffffff;
     text-align: left;
+    font-family: 'Ubuntu';
+    margin:20px;
+    padding: 20px;
+    justify-content: center;
 }
 
 
-.manufacturer-table {
+.showproduct{
 
-    margin: 25px 0;
-    font-size: 0.9em;
+    font-family: 'Ubuntu';
+    background-color: snow;
+    margin: 50px 0;
+    font-family: 'Ubuntu';
+    font-size: 30px;
     min-width: 600px;
+    padding-left: 20px;
+    border: 6px solid black;
+}
+
+.showproduct thead tr {
+    background-color: #009879 ;
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Ubuntu';
+}
+
+.manufacturer-table {
+    font-family: 'Ubuntu';
+    background-color: snow;
+    margin: 50px 0;
+    font-family: 'Ubuntu';
+    font-size: 30px;
+    min-width: 600px;
+    table-layout: auto;
+    margin: 50px 0;
+    margin-left: 50px;
     padding-left: 20px;
     border: 6px solid black;
 
@@ -31,5 +65,5 @@
     background-color: #009879 ;
     color: #ffffff;
     text-align: left;
-
+    font-family: 'Ubuntu';
 }

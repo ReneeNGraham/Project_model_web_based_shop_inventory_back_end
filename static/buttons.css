@@ -1,10 +1,43 @@
-.buttons {
+
+.addbutton{
+    display: grid;
+    justify-content: center;
+    border:2;
+    border-color: black;
+    width: auto;
+    background-color:teal;
+    color: white;
+    padding: 1rem;
+    font-size: 30px;
+    font-family: 'Ubuntu';
+    margin:1rem;
+    text-transform:uppercase;
+    vertical-align: center;
+    position: relative;
+    right:40px;
+    top: 10px;
+    left: 830px;
+    }
+
+.manbutton {
+    display:grid;
+    justify-content: center;
+    border:2;
+    border-color: black;
+    width: auto;
+    background-color:teal;
+    color: white;
+    padding: 1rem;
+    font-size: 30px;
+    font-family: 'Ubuntu';
+    margin:1rem;
+    text-transform:uppercase;
+    vertical-align: center;
     margin-top: 10px;
     margin-left: 2px;
-    font-size: 1.4em;
-    color: #aab8c2;
+    position: relative;
+    top: 10px;
+    left: 80px;
+
   }
-  
-  .buttons i {
-    width: 80px;
-  }
+

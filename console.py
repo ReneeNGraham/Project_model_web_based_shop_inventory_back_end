@@ -42,7 +42,7 @@ product_repository.save(product6)
 product7 = Product("Handy liquid soap", manufacturer3, "liquid hand soap", 40, 2.00, 5.00)
 product_repository.save(product7)
 
-product8 = Product("Behind the scenes", manufacturer4, "toilet paper", 20, 3.00, 8.00 )
+product8 = Product("Behind the scenes", manufacturer4, "toilet paper", 20, 3.00, 6.00)
 product_repository.save(product8)
 
 product9 = Product("Hand me dat wipe", manufacturer4, "hand wipes", 90, 2.00, 6.00)

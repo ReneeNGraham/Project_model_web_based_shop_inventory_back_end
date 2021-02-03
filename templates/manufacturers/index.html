@@ -1,8 +1,6 @@
 {% extends 'base.html' %}
-
 {% block content %}
-<h1>Manufacturers</h1>
-
+<h2>Manufacturers</h2>
 <table class ="manufacturer-table">
 <thead>
     <tr>
@@ -10,18 +8,15 @@
         <th>Description</th>
         <th>Delete</th>
     </tr>
-
 </thead>
     {% for manufacturer in manufacturers %}
-    <form class="delete-form" action="/manufacturers/{{manufacturer.id}}/delete" method="POST"></form>
+    <form class="delete-form" action="/manufacturers/{{manufacturer.id}}/delete" method="POST">
     <tr>
         <td><a href="/manufacturers/{{manufacturer.id }}">{{manufacturer.name}}</a></td>
         <td>{{manufacturer.description}}</td>
         <td><button class="trash-button"><i class="fa fa-trash-o fa-3x" style="color:red" aria-hidden="true"></i></button></td>
     </tr>
-   
+   </form>
     {% endfor %}
-
 </table>
-
 {% endblock %}

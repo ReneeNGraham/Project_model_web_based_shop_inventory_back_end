@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
+<div class="manupdate">
 <form action="/manufacturers/{{manufacturer.id}}" method="post">
   <div>
     <label for="name">Name:</label>
@@ -11,8 +12,9 @@
     <input type="text" id="description" name="description" value="{{manufacturer.description}}" required>
   </div>
 
-  <button type="submit">Update Manufacturer</button>
+  <button type="submit" class="manbutton">Update Manufacturer</button>
 
 </form>
+</div>
 
 {% endblock %}

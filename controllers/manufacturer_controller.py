@@ -39,14 +39,16 @@ def edit_manufacturer(id):
     products = product_repository.select_all()
     return render_template('manufacturers/edit.html',products=products, manufacturer=manufacturer)
 
-
 #UPDATE 
 @manufacturers_blueprint.route("/manufacturers/<id>", methods=['POST'])
 def update_manufacturers(id):
+    orig_manufacturer = manufacturer_repository.select(id)
     name              = request.form['name']
     description       = request.form['description']
-    manufacturer      = Manufacturer(name, description)
-    manufacturer_repository.save(manufacturer)
+    orig_manufacturer.name = name
+    orig_manufacturer.description = description
+    # manufacturer      = Manufacturer(name, description)
+    manufacturer_repository.update(orig_manufacturer)
     return redirect('/manufacturers')
              
 ##DELETE
@@ -54,6 +56,6 @@ def update_manufacturers(id):
 @manufacturers_blueprint.route("/manufacturers/<id>/delete", methods=['POST'])
 def delete_manufacturer(id):
     manufacturer_repository.delete(id)
-    return redirect("/manufacturer")
+    return redirect("/manufacturers")
     
     

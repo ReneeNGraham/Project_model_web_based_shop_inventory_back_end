@@ -1,54 +1,80 @@
 body{
-    background: url('/static/images/background.png');
-    display: flexbox;
-    background-size: cover;
-    background-repeat: repeat;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: x-large;
+  background-image:url("/static/images/background.png");
+  position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color:  #0d5454;
+  background-color: cadetblue;
+  font-family: 'Ubuntu';
+  padding: 0px;
+  margin: 0px;
 }
 
-h1 {
-  display: inline-flexbox;
+.header{
+
+  /* width:100%;
+  height: 140px; */
+  display: grid;
+  justify-content: center;
+  background-color: #0d5454;
+}
+
+.innerheader{
+  width: 1000px;
+  height: 100;
+  display: grid;
+  margin: 0 auto;
+  background: #0cabdb
+
+}
+
+.topline{
+  height: 100%;
+  display:grid;
+  justify-content: center;
+}
+
+.topline h1{
   color: white;
-  border: 5px;
-  border-color:rgb(7, 92, 95);
-  border-style: solid;
-  border-width: initial;
-  outline-color: tomato;
-  text-shadow: rgb(5, 22, 22); backdrop-filter;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 120px;
-  
+  height: 100%;
+  font-family: 'Helvetica neue';
+  font-size: 40px;
+  font-weight: 200;
 }
 
-.title {
-    color: ivory;
-    text-shadow: lemonchiffon;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.topline h1 span{
+  font-weight: 800;
+  
+}
+.navigation{
+  display: inline-block;
+  height: 100%;
+}
+.navigation li{
+  display:inline-block;
+  justify-content: left;
 }
 
+.navigation li a{
+  color: aliceblue;
+  font-family: 'Ubuntu';
+  font-size: 30px;
+  height: 100%;
+  display: grid;
+  justify-items: left;
+  padding: 10px 10px;
 
-.flex {
-    display: flex;
-    background-origin: padding-box;
-    color: darkblue;
-    text-decoration-color: rgb(7, 92, 95);
-    text-emphasis-color: red;
-    font-size: xx-large ; 
-    justify-content:center;
-    padding-inline: 50px ;
+}
 
-  }
-  
-  .flex--row {
-    flex-direction: row;
-    color: darkblue;
-    text-decoration-color: rgb(7, 92, 95);
-    text-emphasis-color: red;
-    font-size: xx-large ; 
-    justify-content:center;
-  }
+h1{
+display: flex;
+color: floralwhite;
+text-shadow: 2px 2px black ;
+font-size: 60px;
+font-weight: 900;
+font-family: 'ubuntu';
+margin: 20px;
+padding: 20px;
 
-
-
+}

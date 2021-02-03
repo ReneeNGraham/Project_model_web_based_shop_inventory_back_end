@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
-
 {% block content %}
-
+ <div class="man_form">
 <form action="/manufacturers" method="post">
     <div>
         <label for="name">Name:</label>
@@ -11,9 +10,7 @@
         <label for="description">Description:</label>
         <input type="text" id="description" name="description" placeholder="description" required>
       </div>
-  
-    <button type="submit">Add Manufacturer</button>
-  
+    <button type="submit" class="manbutton">Add Manufacturer</button>
   </form>
-
+</div>
 {% endblock %}
