@@ -49,8 +49,7 @@ Make lots of little (but sensible!) git commits. The number of commits in your f
 
 This is a basic web app with very basic CSS. The uses to classes with a one to many relationship. One manufacturer can have many products. The app has basic functionality. A full list of products and manufacturers can be viewed, these can be clicked on to be viewed individually and manufacturers and products can be individually edited and deleted. 
 
-The inventory also calculates the mark up on products and visually shows when products are low in stock (so below 50 units) or out of stock. Please screenshot of the web app below:
-
+The inventory also calculates the mark up on products and visually shows when products are low in stock (so below 50 units) or out of stock. Screenshots of the app are included in the repository. 
 
 
 
